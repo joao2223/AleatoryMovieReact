@@ -59,3 +59,69 @@
 .texto_filme {
     color: white;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.container_botao {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;    
+    &:active {
+        background-color:lightgray;
+        box-shadow: 2px 2px 4px #0000009F inset;
+    }
+}
+
+.texto_botao {
+    font-family: 'poppins';
+    font-size: 16px;
+}
+
+.container_filme {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 50%;
+    margin-bottom: 1rem;   
+}
+
+.nome_filme {
+    font-family: 'poppins';
+    font-size: 20px;
+    color: white;
+}
+
+.descricao_filme {
+    font-family: 'poppins';
+    font-size: 16px;
+    color: white;
+}
+
+.imagem_filme {
+    width: 15rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .container_filme {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nome_filme {
+        text-align: center;
+    }
+
+    .descricao_filme{
+        text-align: center;
+    }
+}
